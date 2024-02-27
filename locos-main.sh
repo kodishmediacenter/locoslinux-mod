@@ -29,7 +29,8 @@ while true; do
             apt -y install sysvinit-core sysvinit-utils
 
             # Instalando repo de Loc-OS 23
-            wget -O /tmp/loc-os-23-archive-keyring_23.12.11_all.deb http://br.loc-os.com/pool/main/l/loc-os-23-archive-keyring/loc-os-23-archive-keyring_23.12.11_all.deb
+            #wget -O /tmp/loc-os-23-archive-keyring_23.12.11_all.deb http://br.loc-os.com/pool/main/l/loc-os-23-archive-keyring/loc-os-23-archive-keyring_23.12.11_all.deb
+	    wget http://br.loc-os.com/pool/main/l/loc-os-23-archive-keyring/loc-os-23-archive-keyring_23.12.11_all.deb
             dpkg -i /tmp/loc-os-23-archive-keyring_23.12.11_all.deb
             rm /tmp/loc-os-23-archive-keyring_23.12.11_all.deb
             echo "deb $MIRROR $CODENAME main" > $LIST
